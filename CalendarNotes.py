@@ -1,9 +1,9 @@
 import os
 import datetime
 
-CURRENT_DIR = getcwd()
+CURRENT_DIR = os.getcwd()
 #YYYY-MM-DD HH:MM:SS.SSSS
-TODAYS_DATE = datetime.now()
+TODAYS_DATE = datetime.datetime.now()
 
 def cleanInput(calendar):
     print("hello")
@@ -29,15 +29,16 @@ def calculateLengthOfTime(date):
     print(date)
 
 # Can we override this and pass in different types??
-def appointment(typeOfAppointment, date)
-    if(typeOfAppointment == derm):
-        dermAppointment(date)
-    else if(typeOfAppointment == doc):
-        docAppointment(date)
-    else if(typeOfAppointment == dent):
-        dentAppointment(date)
-    else if(typeOfAppointment == car):
-        carAppointment(date)
+def appointment(typeOfAppointment, date):
+    print(date)
+    #if(typeOfAppointment == derm):
+    #    dermAppointment(date)
+    #else if(typeOfAppointment == doc):
+    #    docAppointment(date)
+    #else if(typeOfAppointment == dent):
+    #    dentAppointment(date)
+    #else if(typeOfAppointment == car):
+    #    carAppointment(date)
 
 def dermAppointment(date):
     amountOfTime = getTimeUntil(date);
